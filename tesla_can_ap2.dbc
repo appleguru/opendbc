@@ -270,9 +270,9 @@ BO_ 840 GTW_status: 8 GTW
  SG_ GTW_statusCounter : 52|4@1+ (1,0) [0|15] "" NEO
 
 BO_ 258 BMS_in_progress: 8 XXX
- SG_ Battery_Voltage : 7|16@0+ (1,0) [0|45000] "milivolts" XXX
- SG_ Pack_Current : 16|14@1- (1,10000) [0|32767] "A" XXX
- SG_ Neg_Terminal_Temp : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ Battery_Voltage : 0|16@1+ (0.01,0) [0|500] "V" XXX
+ SG_ Raw_pack_current : 32|16@1- (1,0) [0|65535] "" XXX
+ SG_ Pack_Current : 16|14@1- (0.1,0) [-2000|2000] "A" XXX
 
 BO_ 562 Battery_Power_Lmt: 8 XXX
  SG_ maxRegenPower : 7|16@0+ (1,0) [0|65535] "" XXX
@@ -281,10 +281,17 @@ BO_ 562 Battery_Power_Lmt: 8 XXX
 BO_ 1378 Battery_Odometer: 8 XXX
  SG_ Battery_Mileage : 0|32@1+ (0,0) [0|4294981] "miles" XXX
 
+BO_ 1778 BMS_Pack_Data: 8 XXX
+ SG_ index : 0|8@1+ (1,0) [0|50] "" XXX
+ SG_ Voltage1 : 8|14@1+ (0.000305,0) [0|5] "V" XXX
+ SG_ Voltage2 : 22|14@1+ (0.000305,0) [0|5] "V" XXX
+ SG_ Voltage3 : 36|14@1+ (0.000305,0) [0|5] "" XXX
+ SG_ Voltage4 : 50|14@1+ (0.000305,0) [0|2047] "V" XXX
 
 
 
 
+CM_ SG_ 1778 index "0-23 (20 on 75kWh packs) are cell group voltages. 24-31 are module temp/voltage";
 VAL_ 1160 DAS_steeringControlType 1 "ANGLE_CONTROL" 3 "DISABLED" 0 "NONE" 2 "RESERVED" ;
 VAL_ 1160 DAS_steeringAngleRequest 16384 "ZERO_ANGLE" ;
 VAL_ 1160 DAS_steeringHapticRequest 1 "ACTIVE" 0 "IDLE" ;
