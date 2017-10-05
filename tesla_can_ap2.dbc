@@ -269,17 +269,17 @@ BO_ 840 GTW_status: 8 GTW
  SG_ GTW_statusChecksum : 56|8@1+ (1,0) [0|255] "" NEO
  SG_ GTW_statusCounter : 52|4@1+ (1,0) [0|15] "" NEO
 
-BO_ 258 BMS in progress: 8 XXX
- SG_ Battery Voltage : 7|16@0+ (1,0) [0|45000] "milivolts" XXX
- SG_ Pack Current : 16|14@1- (1,10000) [0|32767] "A" XXX
- SG_ Neg Terminal Temp : 40|8@1+ (1,0) [0|255] "" XXX
+BO_ 258 BMS_in_progress: 8 XXX
+ SG_ Battery_Voltage : 7|16@0+ (1,0) [0|45000] "milivolts" XXX
+ SG_ Pack_Current : 16|14@1- (1,10000) [0|32767] "A" XXX
+ SG_ Neg_Terminal_Temp : 40|8@1+ (1,0) [0|255] "" XXX
 
-BO_ 562 Battery Power Limits in Progress: 8 XXX
+BO_ 562 Battery_Power_Limits in Progress: 8 XXX
  SG_ maxRegenPower : 7|16@0+ (1,0) [0|65535] "" XXX
  SG_ maxDischargePower : 23|16@0+ (1,0) [0|65535] "" XXX
 
-BO_ 1378 Battery Odometer: 8 XXX
- SG_ Battery Mileage : 0|32@1+ (0,0) [0|4294981] "miles" XXX
+BO_ 1378 Battery_Odometer: 8 XXX
+ SG_ Battery_Mileage : 0|32@1+ (0,0) [0|4294981] "miles" XXX
 
 
 
