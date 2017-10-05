@@ -271,6 +271,7 @@ BO_ 840 GTW_status: 8 GTW
 
 BO_ 258 BMS in progress: 8 XXX
  SG_ Battery Voltage : 7|16@0+ (1,0) [0|45000] "milivolts" XXX
+ SG_ Pack Current : 16|14@1- (1,10000) [0|32767] "A" XXX
 
 BO_ 562 Battery Power Limits in Progress: 8 XXX
  SG_ maxRegenPower : 7|16@0+ (1,0) [0|65535] "" XXX
