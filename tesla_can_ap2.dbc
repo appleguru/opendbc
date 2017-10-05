@@ -285,8 +285,8 @@ BO_ 1778 BMS_Pack_Data: 8 XXX
  SG_ index : 0|8@1+ (1,0) [0|50] "" XXX
  SG_ Voltage1 : 8|14@1+ (0.000305,0) [0|5] "V" XXX
  SG_ Voltage2 : 22|14@1+ (0.000305,0) [0|5] "V" XXX
- SG_ Voltage3 : 36|14@1+ (0.000305,0) [0|5] "" XXX
- SG_ Voltage4 : 50|14@1+ (0.000305,0) [0|2047] "V" XXX
+ SG_ Voltage3 : 36|14@1+ (0.000305,0) [0|5] "V" XXX
+ SG_ Voltage4 : 50|14@1+ (0.000305,0) [0|5] "V" XXX
 
 
 
