@@ -274,7 +274,7 @@ BO_ 258 BMS_in_progress: 8 XXX
  SG_ Pack_Current : 16|14@1- (1,10000) [0|32767] "A" XXX
  SG_ Neg_Terminal_Temp : 40|8@1+ (1,0) [0|255] "" XXX
 
-BO_ 562 Battery_Power_Limits_in_Progress: 8 XXX
+BO_ 562 Battery_Power_Lmt: 8 XXX
  SG_ maxRegenPower : 7|16@0+ (1,0) [0|65535] "" XXX
  SG_ maxDischargePower : 23|16@0+ (1,0) [0|65535] "" XXX
 
